@@ -1,0 +1,22 @@
+int		ft_main_what(t_exectoken *tmp)
+{
+	int		i;
+
+	i = -1;
+	while (tmp)
+	{
+		if (tmp->left != NULL)
+		{
+			;
+			//pipe();
+		}
+		while (tmp->left != NULL)
+			tmp = tmp->left;
+		if (tmp->right == NULL)
+			break ;
+		tmp = tmp->right;
+		if (tmp->right != NULL)
+			ft_whatis(tmp);
+	}
+	return (1);
+}
