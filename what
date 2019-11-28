@@ -12,11 +12,12 @@ int		ft_main_what(t_exectoken *tmp)
 		}
 		while (tmp->left != NULL)
 			tmp = tmp->left;
-		if (tmp->right == NULL)
-			break ;
-		tmp = tmp->right;
+		if (tmp->right != NULL)
+			tmp = tmp->right;
 		if (tmp->right != NULL)
 			ft_whatis(tmp);
+		if (tmp->right == NULL && tmp->left == NULL)
+			break ;
 	}
 	return (1);
 }
