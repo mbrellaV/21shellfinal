@@ -14,8 +14,7 @@ int		ft_main_what(t_exectoken *tmp)
 			tmp = tmp->left;
 		if (tmp->right != NULL)
 			tmp = tmp->right;
-		if (tmp->right != NULL)
-			ft_whatis(tmp);
+		ft_whatis(tmp);
 		if (tmp->right == NULL && tmp->left == NULL)
 			break ;
 	}
