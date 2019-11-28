@@ -74,6 +74,7 @@ t_exectoken		*ft_cr_new_exectoken(t_lextoken *tmp, t_exectoken *prev, int op_typ
 t_exectoken		*do_parser(t_lextoken *tmp)
 {
 	int			i;
+	t_exectoken	*prevdot;
 	t_exectoken	*prev;
 	t_exectoken	*start;
 
@@ -83,18 +84,26 @@ t_exectoken		*do_parser(t_lextoken *tmp)
 	if (!(prev = ft_cr_new_exectoken(tmp, NULL, -1)))
 		return (NULL);
 	start = prev;
+	prevdot = prev;
 	while (tmp != NULL && !(tmp->operator_type == 1 || tmp->operator_type == 5))
 		tmp = tmp->next;
 	if (tmp == NULL)
 		return (start);
 	while (tmp != NULL)
 	{
-		if (tmp->operator_type == 1 || tmp->operator_type == 5)
+		if (is_cmd_delim(tmp->operator_type))
 			i = tmp->operator_type;
 		else if (i != -1)
 		{
-			if (!(prev = ft_cr_new_exectoken(tmp, prev, i)))
-				return (NULL);
+			if (i == 5)
+				if (!(prev = ft_cr_new_exectoken(tmp, prev, i)))
+					return (NULL);
+			if (i == 1)
+			{
+				if (!(prevdot = ft_cr_new_exectoken(tmp, prevdot, i)))
+					return (NULL);
+				prev = prevdot;
+			}
 			i = -1;
 		}
 		tmp = tmp->next;
@@ -125,18 +134,17 @@ t_exectoken		*all_parse(char *cmd)
 
 	tmp = do_lexer(cmd);
 	doptmp = tmp;
-	while (tmp)
-		tmp = tmp->next;
+	//do_zam(tmp);
 	extmp = do_parser(doptmp);
 	dopextmp = extmp;
 	while (extmp)
 	{
 		show_env(extmp->file_args);
 		show_env(extmp->file_opt);
+		printf("\n%p\n", extmp->right);
+		printf("\n%p\n", extmp->left);
 		if (extmp->right != NULL)
 			extmp = extmp->right;
-		else if (extmp->left != NULL)
-			extmp = extmp->left;
 		else
 			break ;
 
