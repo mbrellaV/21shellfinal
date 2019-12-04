@@ -24,7 +24,7 @@ t_exectoken		*ft_cr_new_exectoken(t_lextoken *tmp, t_exectoken *prev, int op_typ
 		i++;
 		tmp = tmp->next;
 	}
-	if (tmp != NULL && !is_cmd_delim(tmp->operator_type))
+	if (tmp != NULL && !is_cmd_delim(tmp->operator_type) && tmp->operator_type >= 11)
 		i--;
 	d = i;
 	while (tmp != NULL && !is_cmd_delim(tmp->operator_type))
