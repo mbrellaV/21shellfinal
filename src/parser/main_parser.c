@@ -5,6 +5,41 @@ int		is_cmd_delim(int i)
 	return (i == 1 || i == 5);
 }
 
+int		ft_maslen(char **mas)
+{
+	int i;
+
+	i = 0;
+	if (!mas)
+		return (-1);
+	while (mas[i])
+		i++;
+	return (i);
+}
+
+char	*find_var(char *dop)
+{
+	int		i;
+	char	*dopd;
+
+	i = 0;
+	dopd = ft_strjoin(dop, "=");
+	while (g_env[i])
+	{
+		if (ft_strstr(g_env[i], dopd) == g_env[i])
+		{
+			if (!(dop = ft_strsub(g_env[i], ft_strlen(dopd),
+								  ft_strlen(g_env[i]) - ft_strlen(dopd))))
+				return (NULL);
+			ft_strdel(&dopd);
+			return (dop);
+		}
+		i++;
+	}
+	ft_strdel(&dopd);
+	return (NULL);
+}
+
 char	*do_zam_str(char *str)
 {
 	int 	i;
@@ -13,7 +48,7 @@ char	*do_zam_str(char *str)
 	int		c;
 
 	c = 0;
-	if (!(hp = find_var("HOME", g_env)))
+	if (!(hp = find_var("HOME")))
 		return (NULL);
 	i = 0;
 	while (str[i])
@@ -24,6 +59,8 @@ char	*do_zam_str(char *str)
 	}
 	if (!(new = ft_memalloc((ft_strlen(hp) * c) + ft_strlen(str) + 1)))
 		return (NULL);
+	//ft_printf(" %d ", (ft_strlen(hp) * c) + ft_strlen(str) + 1);
+	i = 0;
 	while (str[i])
 	{
 		if (str[i] == '~')
@@ -36,6 +73,7 @@ char	*do_zam_str(char *str)
 			new[i] = str[i];
 		i++;
 	}
+	return (new);
 }
 
 int		do_zam(t_exectoken *tmp)
@@ -47,15 +85,18 @@ int		do_zam(t_exectoken *tmp)
 	{
 		while (tmp->file_args[i])
 		{
-			do_zam_str(tmp->file_args[i]);
+			//ft_printf(" %s ", tmp->file_args[i]);
+			tmp->file_args[i] = do_zam_str(tmp->file_args[i]);
+			//ft_printf(" %s ", tmp->file_args[i]);
 			i++;
 		}
 		if (tmp->left != NULL)
 			tmp = tmp->left;
 		else
 			tmp = tmp->right;
+		i = 0;
 	}
-	return 1;
+	return (1);
 }
 
 t_exectoken		*ft_cr_new_exectoken(t_lextoken *tmp, t_exectoken *prev, int op_type)
@@ -187,21 +228,19 @@ t_exectoken		*all_parse(char *cmd)
 
 	tmp = do_lexer(cmd);
 	doptmp = tmp;
-	//do_zam(tmp);
 	extmp = do_parser(doptmp);
 	dopextmp = extmp;
-	while (extmp)
-	{
-		ft_printf("da");
-		show_env(extmp->file_args);
-		ft_printf("no");
-		show_env(extmp->file_opt);
-		printf("\n%p\n", extmp->right);
-		printf("\n%p\n", extmp->left);
-		if (extmp->right != NULL)
-			extmp = extmp->right;
-		else
-			break ;
-	}
+	do_zam(extmp);
+	//while (extmp)
+	//{
+		//show_env(extmp->file_args);
+		//show_env(extmp->file_opt);
+		//printf("\n%p\n", extmp->right);
+		//printf("\n%p\n", extmp->left);
+	//	if (extmp->right != NULL)
+	//		extmp = extmp->right;
+	//	else
+	//		break ;
+	//}
 	return (dopextmp);
 }
