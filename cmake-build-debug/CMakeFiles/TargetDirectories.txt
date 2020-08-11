@@ -1,0 +1,3 @@
+/home/petruha2001/ls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/petruha2001/ls/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/petruha2001/ls/cmake-build-debug/CMakeFiles/ls.dir

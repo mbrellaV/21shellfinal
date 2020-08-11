@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ls"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/petruha2001/ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/petruha2001/ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/petruha2001/ls/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ls">
+				<Option output="/home/petruha2001/ls/cmake-build-debug/ls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/petruha2001/ls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/petruha2001/ls/."/>
+					<Add directory="/home/petruha2001/ls/./inc"/>
+					<Add directory="/home/petruha2001/ls/./ft_printf/includes"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 ls"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ls/fast">
+				<Option output="/home/petruha2001/ls/cmake-build-debug/ls" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/petruha2001/ls/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/petruha2001/ls/."/>
+					<Add directory="/home/petruha2001/ls/./inc"/>
+					<Add directory="/home/petruha2001/ls/./ft_printf/includes"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 ls/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/ls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/petruha2001/ls/src/additional_funcs.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/complete_list.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/complete_list_2.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/ft_ls.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/ft_strjoin_safe.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/get_flags.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/print_errors.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/print_result.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/sort.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/src/sort_args.c">
+			<Option target="ls"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/ls/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

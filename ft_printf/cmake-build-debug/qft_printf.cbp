@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="qft_printf"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/petruha2001/qft_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/petruha2001/qft_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/petruha2001/qft_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qft_printf">
+				<Option output="/home/petruha2001/qft_printf/cmake-build-debug/qft_printf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/petruha2001/qft_printf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/petruha2001/qft_printf/sasf"/>
+					<Add directory="/home/petruha2001/qft_printf/includes"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 qft_printf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qft_printf/fast">
+				<Option output="/home/petruha2001/qft_printf/cmake-build-debug/qft_printf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/petruha2001/qft_printf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/petruha2001/qft_printf/sasf"/>
+					<Add directory="/home/petruha2001/qft_printf/includes"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 qft_printf/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/petruha2001/qft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/petruha2001/qft_printf/includes/ft_printf.h">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/main.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/add_buff.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/add_char.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/add_d.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/add_str.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_add_c_s_d.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_add_double.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_dtoa.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_itoa_base_c.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_math.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_okr_double.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_oxu.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_pars.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_pars2.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_pointer.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_pr_help.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/srcs/ft_printf.c">
+			<Option target="qft_printf"/>
+		</Unit>
+		<Unit filename="/home/petruha2001/qft_printf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,3 @@
+/home/petruha2001/qft_printf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/petruha2001/qft_printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/petruha2001/qft_printf/cmake-build-debug/CMakeFiles/qft_printf.dir
